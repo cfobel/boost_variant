@@ -1,0 +1,18 @@
+Boost.Variant 
+
+    Safe, generic, stack-based discriminated union container.
+
+The variant class template is a safe, generic, stack-based discriminated union container, offering a simple solution for manipulating an object from a heterogeneous set of types in a uniform manner. Whereas standard containers such as std::vector may be thought of as "multi-value, single type," variant is "multi-type, single value."
+
+Notable features of boost::variant include:
+
+    * Full value semantics, including adherence to standard overload resolution rules for conversion operations.
+    * Compile-time type-safe value visitation via boost::apply_visitor.
+    * Run-time checked explicit value retrieval via boost::get.
+    * Support for recursive variant types via both boost::make_recursive_variant and boost::recursive_wrapper.
+    * Efficient implementation -- stack-based when possible (see the section called “"Never-Empty" Guarantee” for more details).
+
+------------------------------------------------------------------------
+
+Example from:
+    http://stackoverflow.com/questions/607458/storing-a-list-of-arbitrary-objects-in-c
